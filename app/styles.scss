@@ -32,7 +32,7 @@
   @include theme.theme;
 }
 
-html, body {
+html, body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -60,10 +60,13 @@ html, body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-block: 64px;
+    justify-content: space-evenly;
 
     .hero-info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      
       h1 {
         @extend .display-large;
         @extend .on-primary-text;
